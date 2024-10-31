@@ -1,0 +1,39 @@
+{
+    "python": [
+        "What is the difference between a list and a tuple in Python? When would you use each?",
+        "Explain the difference between == and = is in Python.",
+        "Explain the concept of inheritance in object-oriented programming.",
+        "What is a decorator in Python? How do you use it?",
+        "How does garbage collection work in Python?",
+        "How do you handle exceptions in Python? Provide examples of using try, except, finally.",
+        "Explain the difference between GET and POST HTTP methods.",
+        "What is the difference between a stack and a queue? Provide examples of where each might be used.",
+        "Explain the concept of recursion. Provide an example of a recursive function in Python.",
+        "Tell me about a challenging problem you encountered during a project and how you solved it.",
+        "How do you stay updated with the latest trends and technologies in your field?",
+        "Describe a situation where you had to work under pressure to meet a deadline. How did you handle it?",
+        "Can you describe a time when you had to work on a team project? What was your role, and how did you contribute?",
+        "How do you approach solving a complex problem? Can you walk me through your problem-solving process?",
+        "Describe a situation where you had a disagreement with a team member. How did you handle it?",
+        "Can you provide an example of a time when you demonstrated leadership skills?",
+        "How do you prioritize tasks when working on multiple projects simultaneously?",
+        "Tell me about a time when you had to learn a new technology or programming language quickly. How did you approach it?"
+    ],
+
+    "machine learning": [
+        "What is overfitting?",
+        "Explain the concept of gradient descent.",
+        "What are support vector machines?"
+    ],
+    "Data Structures": [
+        "Explain how a binary search tree works.",
+        "What is the difference between a stack and a queue?",
+        "Describe a hash table."
+    ],
+
+    "java": [
+        "What is Java?",
+        "What is the difference between a class and an object in Java?",
+        "What are the main features of Java?"
+    ]
+}
