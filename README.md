@@ -43,6 +43,9 @@ This project is a Flask-based API that allows users to upload their resumes and 
 - **Results Presentation:**
 The application returns a JSON response containing the analysis results, including extracted skills, average emotional confidence scores, and text similarity percentages.
 
-## Images
 
-![Flowchart](assets/audio_confidence.png)
+## Working project images
+![Alt text](assets/video_confidence.jpeg)
+![Alt text](assets/audio_confidence.png)
+![Alt text](assets/answer_accuracy.png)
+
