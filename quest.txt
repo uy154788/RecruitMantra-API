@@ -31,7 +31,7 @@
         "Describe a hash table."
     ],
 
-    "java": [
+    "Java": [
         "What is Java?",
         "What is the difference between a class and an object in Java?",
         "What are the main features of Java?"
