@@ -16,20 +16,22 @@ skill_extractor_bp = Blueprint('skill_extractor', __name__)
 @skill_extractor_bp.route('/extract_skills', methods=['POST'])
 def extract_skills():
     resume_url = request.json.get('resume_url')
-
+    # print("Hello")
     # Download the resume file from the provided URL
     response = requests.get(resume_url)
     if response.status_code == 200:
         file_content = BytesIO(response.content)
         content_type = response.headers.get('Content-Type', '').lower()
-
+        # print("Hello")
         if 'application/pdf' in content_type:
             textinput = pdftotext(file_content)
+            # print("i am")
         elif 'application/vnd.openxmlformats-officedocument.wordprocessingml.document' in content_type:
             textinput = doctotext(file_content)
         elif 'text/plain' in content_type:
             textinput = file_content.read().decode('utf-8')
         else:
+            # print("Hello2")
             return jsonify({"error": "Unsupported file format"}), 400
     else:
         return jsonify({"error": "Failed to download the file from the provided URL"}), response.status_code
@@ -39,10 +41,13 @@ def extract_skills():
     questions_file_path = 'quest.txt'
 
     # Extract skills and questions
+    # print("All fine")
     matched_skills = extract_skills_from_resume(textinput, skills_csv_path)
+    # print("All fine2")
     questions = load_questions(questions_file_path)
+    # print("All fine3")
     random_questions = get_random_questions_for_skills(matched_skills, questions)
-
+    # print("All fine4")
     return jsonify({"questions": random_questions})
 
 
@@ -56,6 +61,9 @@ def doctotext(docx_file):
 def pdftotext(pdf_file):
     # Convert PDF to text
     pdf_reader = PyPDF2.PdfReader(pdf_file)
+    if '/Root' not in pdf_reader.trailer:
+        raise ValueError("Invalid PDF file structure (missing /Root).")
+
     text = ""
     for page_num in range(len(pdf_reader.pages)):
         page = pdf_reader.pages[page_num]

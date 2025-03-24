@@ -109,7 +109,5 @@ def process_request():
             os.remove(temp_file)
 
     return jsonify({
-        # "original_answer": original_answer,
-        # "extracted_text": extracted_text,
         "Accuracy": similarity
     })
