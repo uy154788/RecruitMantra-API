@@ -14,7 +14,6 @@ from manage_question import manage_question_bp
 from manage_result import manage_result_bp
 
 app = Flask(__name__)
-CORS(app)
 
 # Register Blueprints
 app.register_blueprint(skill_extractor_bp, url_prefix='/skills')
