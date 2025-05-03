@@ -23,7 +23,7 @@
   "How do you handle multiple projects at once?",
   "Have you ever worked on a tight deadline?",
   "What tools do you use for project management?",
-  "What’s your approach to problem-solving?",
+  "What is your approach to problem-solving?",
   "How do you ensure code quality?",
   "What is your experience with teamwork?",
   "Have you mentored anyone?",
@@ -31,7 +31,7 @@
   "How do you handle unexpected changes in a project?",
   "Have you ever led a team?",
   "How do you handle underperforming team members?",
-  "What’s your leadership style?",
+  "What is your leadership style?",
   "How do you handle decision-making under uncertainty?",
   "Have you ever disagreed with management?",
   "How do you motivate your team?",
@@ -39,7 +39,7 @@
   "How do you manage time effectively?",
   "What would you do if your manager asked you to complete an unethical task?",
   "How do you delegate tasks?",
-  "What would you do if a teammate wasn’t cooperating?",
+  "What would you do if a teammate was not cooperating?",
   "What if you were given a task with no instructions?",
   "How would you handle a difficult client?",
   "What if you make a mistake in a project?",
@@ -48,5 +48,5 @@
   "How do you handle a demanding manager?",
   "What would you do if you had a disagreement with your boss?",
   "How do you ensure continuous learning?",
-  "If you had to work on a technology you’re unfamiliar with, how would you approach it?"
+  "If you had to work on a technology you are unfamiliar with, how would you approach it?"
 ]

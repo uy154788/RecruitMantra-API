@@ -10,7 +10,7 @@ with open("manage_question.txt", "r") as file:
     questions = json.load(file)
 
 @manage_question_bp.route("/manage-question", methods=["POST"])
-def get_random_question():
-    """API endpoint to get a random interview question."""
-    random_question = random.choice(questions)
-    return jsonify({"question": random_question})  # Ensuring proper JSON format
+def get_random_questions():
+    num_questions = min(10, len(questions))
+    random_questions = random.sample(questions, num_questions)
+    return jsonify({"questions": random_questions})
